@@ -1,7 +1,7 @@
 package com.hspedu.client.view;
 
-import com.hspedu.qqclient.service.UserClientService;
-import com.hspedu.qqclient.utils.Utility;
+import com.hspedu.client.service.UserClientService;
+import com.hspedu.client.utils.Utility;
 
 public class QQView {
     private boolean loop = true; //控制是否顯示菜單

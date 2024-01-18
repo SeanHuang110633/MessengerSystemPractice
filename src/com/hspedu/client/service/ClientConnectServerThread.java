@@ -1,7 +1,7 @@
 package com.hspedu.client.service;
 
-import com.hspedu.qqcommon.Message;
-import com.hspedu.qqcommon.MessageType;
+import com.hspedu.common.Message;
+import com.hspedu.common.MessageType;
 
 import java.io.ObjectInputStream;
 import java.net.Socket;
