@@ -1,7 +1,7 @@
 package com.hspedu.server.service;
 
-import com.hspedu.qqcommon.Message;
-import com.hspedu.qqcommon.MessageType;
+import com.hspedu.common.Message;
+import com.hspedu.common.MessageType;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -26,7 +26,7 @@ public class ServerConnectClientThread extends Thread {
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 Message message = (Message) ois.readObject();
 
-                //online friends list
+                //send online friends list back
                 if (message.getMesType().equals(MessageType.MESSAGE_GET_ONLINE_FRIENDS)) {
                     System.out.println(message.getSender() + " requests a online friends List");
                     //create a message and set its content according to hm
@@ -45,9 +45,20 @@ public class ServerConnectClientThread extends Thread {
                     System.out.println("client " + userID + " logout");
                     break;
                 }
+
+                //receive private message request from client and send to target getter
+                if(message.getMesType().equals(MessageType.MESSAGE_COMM_MES)){
+                    //find the getter's socket on the server side from threads collection hm
+                    ServerConnectClientThread receiverThread = ManageServerConnectClientThread
+                            .getServerConnectClientThread(message.getGetter());
+                    System.out.println(receiverThread.userID + " is already to receive a message...");
+                    //send the message to getter
+                    ObjectOutputStream oos = new ObjectOutputStream(receiverThread.socket.getOutputStream());
+                    oos.writeObject(message);
+                    System.out.println("send the message to receiver "+ receiverThread.userID);
+                }
             } catch (Exception e) {
                 throw new RuntimeException(e);
-            } finally {
             }
         }
     }

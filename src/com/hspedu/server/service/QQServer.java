@@ -1,8 +1,8 @@
 package com.hspedu.server.service;
 
-import com.hspedu.qqcommon.Message;
-import com.hspedu.qqcommon.MessageType;
-import com.hspedu.qqcommon.User;
+import com.hspedu.common.Message;
+import com.hspedu.common.MessageType;
+import com.hspedu.common.User;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -46,7 +46,7 @@ public class QQServer {
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
                 User u = (User) ois.readObject();
-                //create a Message Object for sending back to client
+                //create a Message and send back to client
                 Message message = new Message();
                 //authenticate
                 if (check(u.getUserID(), u.getPassword())) {
