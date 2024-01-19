@@ -93,4 +93,25 @@ public class UserClientService {
         }
     }
 
+    //send private messages
+    public void sendPrivateMessage(String getter, String content){
+        //set the information of Message
+        Message message = new Message();
+        message.setMesType(MessageType.MESSAGE_COMM_MES);
+        message.setSender(user.getUserID());
+        message.setGetter(getter);
+        message.setContent(content);
+
+        //get the socket of the current threads then create an OutPutStream
+        try {
+            ObjectOutputStream oos = new ObjectOutputStream(
+                    ManageClientConnectServerThread.getClientConnectServerThread(user.getUserID())
+                            .getSocket().getOutputStream());
+            oos.writeObject(message);
+            System.out.println("client " + user.getUserID() + " send message to " + message.getGetter());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
