@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter.">
+    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/MessageClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/UserClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/UserClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -96,13 +105,22 @@
       <option name="project" value="LOCAL" />
       <updated>1705667918302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Receive a message from another client via the server.">
+      <option name="closed" value="true" />
+      <created>1705670697309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705670697309</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload the previously written MessengerClient files to GitHub and meanwhile practicing how to use GitHub features in IntelliJ" />
     <MESSAGE value="Fix incorrect import paths for resource access" />
     <MESSAGE value="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter." />
-    <option name="LAST_COMMIT_MESSAGE" value="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter." />
+    <MESSAGE value="Receive a message from another client via the server." />
+    <option name="LAST_COMMIT_MESSAGE" value="Receive a message from another client via the server." />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.hspedu.client.view;
 
+import com.hspedu.client.service.MessageClientService;
 import com.hspedu.client.service.UserClientService;
 import com.hspedu.client.utils.Utility;
 
@@ -7,6 +8,7 @@ public class QQView {
     private boolean loop = true; //控制是否顯示菜單
     private String key = ""; //接收用戶鍵盤輸入
     private UserClientService userClientService = new UserClientService();
+    private MessageClientService messageClientService = new MessageClientService();
 
     public static void main(String[] args) {
         new QQView().mainMenu();
@@ -24,7 +26,7 @@ public class QQView {
             key = Utility.readString(1);
             switch (key) {
                 case "1":
-                    System.out.println("請輸入UserID :");
+                    System.out.print("請輸入UserID :");
                     String userID = Utility.readString(50);
                     System.out.print("請輸入Password :");
                     String password = Utility.readString(50);
@@ -50,11 +52,11 @@ public class QQView {
                                     break;
                                 case "3":
                                     System.out.println("進入私聊訊息功能...");
-                                    System.out.print("請輸入訊息發送對象 :");
-                                    String getter = Utility.readString(50);
+                                    System.out.print("請輸入訊息發送對象(在線) :");
+                                    String getterId = Utility.readString(50);
                                     System.out.print("請輸入訊息內容 :");
                                     String content = Utility.readString(50);
-                                    userClientService.sendPrivateMessage(getter,content);
+                                    messageClientService.sendMessageToOne(content,userID,getterId);
                                     System.out.println("訊息已送發");
                                     break;
                                 case "4":

@@ -38,7 +38,7 @@ public class ClientConnectServerThread extends Thread {
 
                 //another client send the private message through the server
                 if(message.getMesType().equals(MessageType.MESSAGE_COMM_MES)){
-                    System.out.println("發訊人: " + message.getSender()  );
+                    System.out.println("/n發訊人: " + message.getSender()  );
                     System.out.println("訊息內容: " + message.getContent() );
                 }
             } catch (Exception e) {
