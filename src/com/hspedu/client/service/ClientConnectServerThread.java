@@ -23,7 +23,9 @@ public class ClientConnectServerThread extends Thread {
                 System.out.println("客戶端線程等待伺服器訊息");
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 Message message =(Message) ois.readObject();
-                //Process accordingly based on the different types of messages returned by the server
+
+                //Process accordingly based on the different types of messages returned by the server.
+                //server sends back the online friend list
                 if(message.getMesType().equals(MessageType.MESSAGE_RET_ONLINE_FRIENDS)){
                     String[] list = message.getContent().split(" ");
                     System.out.println("\n======== Online Friends List =========");
@@ -32,6 +34,12 @@ public class ClientConnectServerThread extends Thread {
                     }
                 }else{
                     //later...
+                }
+
+                //another client send the private message through the server
+                if(message.getMesType().equals(MessageType.MESSAGE_COMM_MES)){
+                    System.out.println("發訊人: " + message.getSender()  );
+                    System.out.println("訊息內容: " + message.getContent() );
                 }
             } catch (Exception e) {
                 throw new RuntimeException(e);

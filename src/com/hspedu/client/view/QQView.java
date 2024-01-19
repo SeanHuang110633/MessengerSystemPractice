@@ -24,7 +24,7 @@ public class QQView {
             key = Utility.readString(1);
             switch (key) {
                 case "1":
-                    System.out.print("請輸入UserID :");
+                    System.out.println("請輸入UserID :");
                     String userID = Utility.readString(50);
                     System.out.print("請輸入Password :");
                     String password = Utility.readString(50);
@@ -49,7 +49,13 @@ public class QQView {
                                     System.out.println("群發訊息");
                                     break;
                                 case "3":
-                                    System.out.println("私聊訊息");
+                                    System.out.println("進入私聊訊息功能...");
+                                    System.out.print("請輸入訊息發送對象 :");
+                                    String getter = Utility.readString(50);
+                                    System.out.print("請輸入訊息內容 :");
+                                    String content = Utility.readString(50);
+                                    userClientService.sendPrivateMessage(getter,content);
+                                    System.out.println("訊息已送發");
                                     break;
                                 case "4":
                                     System.out.println("發送文件");

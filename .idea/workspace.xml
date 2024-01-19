@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="Fix incorrect import paths for resource access">
+    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="client" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2b8INrygvYb7qTQLZvhhaVMHAxE" />
@@ -21,19 +28,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;client&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wl110/Desktop/MessengerClient/src/com/hspedu/common&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Private__Message",
+    "last_opened_file_path": "C:/Users/wl110/Desktop/MessengerClient/src/com/hspedu/common",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wl110\Desktop\MessengerClient\src\com\hspedu\common" />
       <recent name="C:\Users\wl110\Desktop\MessengerClient\src\com\hspedu\client" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="QQView" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hspedu.client.view.QQView" />
+      <module name="MessengerClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hspedu.client.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QQView" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,12 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705591700650</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter.">
+      <option name="closed" value="true" />
+      <created>1705667918302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705667918302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upload the previously written MessengerClient files to GitHub and meanwhile practicing how to use GitHub features in IntelliJ" />
     <MESSAGE value="Fix incorrect import paths for resource access" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect import paths for resource access" />
+    <MESSAGE value="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter." />
+    <option name="LAST_COMMIT_MESSAGE" value="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter." />
   </component>
 </project>
