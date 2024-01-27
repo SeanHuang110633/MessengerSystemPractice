@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/MessageClientService.java" afterDir="false" />
+    <list default="true" id="464196e1-ae27-4b36-8a85-f401494fb5cf" name="Changes" comment="rewrite some comments in proper English">
+      <change afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/FileClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/ClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/ManageClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/ManageClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/MessageClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/MessageClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/service/UserClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/service/UserClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/client/view/QQView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/common/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/common/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hspedu/common/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hspedu/common/MessageType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Private__Message",
-    "last_opened_file_path": "C:/Users/wl110/Desktop/MessengerClient/src/com/hspedu/common",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;client&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wl110/Desktop/MessengerClient/src/com/hspedu/common&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wl110\Desktop\MessengerClient\src\com\hspedu\common" />
@@ -122,5 +127,15 @@
     <MESSAGE value="add a method at UserClientService.java&#10;called &quot;sendPrivateMessage&quot;,which is used to send message to target getter." />
     <MESSAGE value="Receive a message from another client via the server." />
     <option name="LAST_COMMIT_MESSAGE" value="Receive a message from another client via the server." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.StreamCorruptedException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

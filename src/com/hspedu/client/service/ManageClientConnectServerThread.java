@@ -2,15 +2,16 @@ package com.hspedu.client.service;
 
 import java.util.HashMap;
 
-    public class ManageClientConnectServerThread {
+public class ManageClientConnectServerThread {
     //key is userID, value is ClientConnectServerThread
     private static HashMap<String, ClientConnectServerThread> hm = new HashMap<>();
+    //private final Object lock;
 
     public static void addClientConnectServerThread(String userID, ClientConnectServerThread clientConnectServerThread) {
-        hm.put(userID,clientConnectServerThread);
+        hm.put(userID, clientConnectServerThread);
     }
 
-    public static ClientConnectServerThread getClientConnectServerThread(String userID){
+    public static ClientConnectServerThread getClientConnectServerThread(String userID) {
         return hm.get(userID);
     }
 }

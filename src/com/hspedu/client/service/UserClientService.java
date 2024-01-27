@@ -16,6 +16,7 @@ public class UserClientService {
     private Socket socket;
 
     public boolean checkUser(String userID, String password) {
+
         boolean b = false;
         user.setUserID(userID);
         user.setPassword(password);
@@ -33,12 +34,13 @@ public class UserClientService {
 
             // Decide how to proceed
             if (o.getMesType().equals(MessageType.MESSAGE_LOGIN_SUCCEED)) {
-
+                System.out.println("pass the authentication");
                 // User authentication succeeded,
                 // create a thread to maintain communication with the server
                 // -> create ClientConnectServerThread
                 ClientConnectServerThread clientConnectServerThread = new ClientConnectServerThread(socket);
                 clientConnectServerThread.start();
+
 
                 //For future expansion convenience, add the started thread to
                 // a hashmap collection for management
@@ -57,6 +59,7 @@ public class UserClientService {
 
     //request online friends list from server
     public void onlineFriendList() {
+        System.out.println("調用了onlineFriendList方法");
         //create a message sent to server
         Message message = new Message();
         message.setMesType(MessageType.MESSAGE_GET_ONLINE_FRIENDS);
