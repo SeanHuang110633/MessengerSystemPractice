@@ -15,14 +15,6 @@ public class ManageServerConnectClientThread {
     }
 
 
-    public static String getOnlineUser(){
-        Iterator<String> iterator = hm.keySet().iterator();
-        String onlineUserList = "";
-        while (iterator.hasNext()){
-            onlineUserList = onlineUserList + iterator.next() + " ";
-        }
-        return onlineUserList;
-    }
 
     public static String retOnlineUser(){
         String onlineUsers = "";
@@ -35,5 +27,9 @@ public class ManageServerConnectClientThread {
 
     public static void removeServerConnectClientThread(String userID){
         hm.remove(userID);
+    }
+
+    public static HashMap<String, ServerConnectClientThread> getHm() {
+        return hm;
     }
 }
