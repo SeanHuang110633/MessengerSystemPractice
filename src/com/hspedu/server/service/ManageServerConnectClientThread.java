@@ -16,7 +16,7 @@ public class ManageServerConnectClientThread {
 
 
 
-    public static String retOnlineUser(){
+    public static String getOnlineUser(){
         String onlineUsers = "";
         Iterator<String> iterator = hm.keySet().iterator();
         while (iterator.hasNext()){

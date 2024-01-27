@@ -64,7 +64,7 @@ public class ServerConnectClientThread extends Thread {
                     // Create a message and set its content
                     Message mes = new Message();
                     mes.setMesType(MessageType.MESSAGE_RET_ONLINE_FRIENDS);
-                    mes.setContent(ManageServerConnectClientThread.retOnlineUser());
+                    mes.setContent(ManageServerConnectClientThread.getOnlineUser());
                     // Send the message back to the client
                     ObjectOutputStream oos = new ObjectOutputStream(
                             ManageServerConnectClientThread.getServerConnectClientThread(userID).socket.getOutputStream());

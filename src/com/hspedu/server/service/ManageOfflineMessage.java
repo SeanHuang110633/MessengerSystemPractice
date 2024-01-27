@@ -3,7 +3,6 @@ package com.hspedu.server.service;
 import com.hspedu.common.Message;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ManageOfflineMessage {
