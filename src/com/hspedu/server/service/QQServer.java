@@ -17,7 +17,6 @@ public class QQServer {
     ServerSocket serverSocket = null;
     //create a HashMap to store valid user data
     private static HashMap<String, User> validUsers = new HashMap<>();
-    //private static HashMap<String, ArrayList<Message>> offLineMesDB = new HashMap<>();
 
 
     static {
